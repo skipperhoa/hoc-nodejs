@@ -1,0 +1,35 @@
+*{margin:0px;padding:0px}
+body{font-size:16px;}
+header{
+	width:100%;
+	background:#333;
+	height:20px;
+}
+section{
+	width:100%;
+	.table{
+		width:73.20644%;
+		margin:0px auto;
+		thead>tr{
+			background:rgba(4,104,188,0.6);
+		}
+		thead>tr>th{padding:10px 0px;}
+		tbody>tr{
+			text-align:center;
+		}
+		tbody>tr>td{padding:10px 0px;}
+		tbody>tr>td>input{padding:4px;width:200px;}
+		tbody>tr:nth-child(even){
+			background:#eee;
+
+		}
+		
+
+	}
+	.table2{width:30%;margin:auto;
+		tbody>tr>td>select{
+			padding:4px;width:80px;
+		}
+		
+	}
+}

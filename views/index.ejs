@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Danh sách sinh viên</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>	
+	</header>
+	<section>
+			<table class="table" border="0" cellpadding="0" cellspacing="0">
+				<caption>Danh sách sinh viên</caption>
+					
+				<thead>
+
+					<tr>
+						<th>STT</th>
+						<th>MASV</th>
+						<th>Tên SV</th>
+						<th>Phái</th>
+						<th>Sửa</th>
+						<th>Xóa</th>
+					</tr>
+				</thead>
+				<tbody>
+				<%i=1%>
+			     <%results.forEach(function(rows){%>
+					<tr>
+						<td><%=i++%></td>
+						<td><%=rows.masv%></td>
+						<td><%=rows.tensv%></td>
+						<td><%=((rows.gioitinh==1)?"Nam":"Nữ")%></td>
+						<td><a href="/sua_sv/<%=rows.idsv%>">Sửa</a></td>
+						<td><a href="/xoa_sv/<%=rows.idsv%>">Xóa</a></td>
+					</tr>
+				<%})%>
+					<tr>
+						<td colspan="6"><a href="/themsv" style="float: left;">Thêm sinh viên</a></td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+</body>
+</html>

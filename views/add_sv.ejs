@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Danh sách sinh viên</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>	
+	</header>
+	<section>
+	<form action="add/themsv" method="post">
+			<table class="table table2" border="0" cellpadding="0" cellspacing="0">
+				<caption>Thêm sinh viên</caption>
+				
+				<tbody>
+					<tr>
+						<td>Mã SV</td>
+						<td><input type="text" name="masv"></td>
+					</tr>
+					<tr>
+						<td>Họ và tên</td>
+						<td><input type="text" name="hoten"></td>
+					</tr>
+					<tr>
+						<td>Giới tính</td>
+						<td><select name="gioitinh">
+								<option value="1">Nam</option>
+								<option value="0">Nữ</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" name="submit" value="Thêm sinh viên"/></td>
+					</tr>
+				</tbody>
+			</table>
+			</form>
+	</section>
+</body>
+</html>

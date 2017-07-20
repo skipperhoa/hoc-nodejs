@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Danh sách sinh viên</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header>	
+	</header>
+	<section>
+	<form action="" method="post">
+			<table class="table table2" border="0" cellpadding="0" cellspacing="0">
+				<caption>Cập nhật sinh viên</caption>
+				
+				<tbody>
+					<tr>
+						<td>Mã SV</td>
+						<td><input type="text" name="masv" value="<%=results[0].masv%>"></td>
+					</tr>
+					<tr>
+						<td>Họ và tên</td>
+						<td><input type="text" name="hoten"  value="<%=results[0].tensv%>"></td>
+					</tr>
+					<tr>
+						<td>Giới tính</td>
+						<td><select name="gioitinh">
+						<%if(results[0].gioitinh==1){%>
+							<option value="1">Nam</option>
+							<option value="0">Nữ</option>
+						<%}else{%>
+						    <option value="0">Nữ</option>
+							<option value="1">Nam</option>
+							<%}%>
+									
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" name="submit" value="Cập nhật sinh viên"/></td>
+					</tr>
+				</tbody>
+			</table>
+			</form>
+	</section>
+</body>
+</html>
